@@ -25,8 +25,9 @@ class Network():
         self.nodes.append(Node(name,parents,next))
             
         
-    def nose():
+    def addProbs(self, name, dic):
         pass
+        
             
 
             
