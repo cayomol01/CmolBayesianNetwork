@@ -39,7 +39,7 @@ class Network():
                 res+=f'P(%s)'%i.name
             else:
                 res+= f"P(%s|%s)" %(i.name,''.join(i.parents))
-        print(res)
+        return res
                 
     def addParents(self, name, parents):
         idx = self.names.index(name)
