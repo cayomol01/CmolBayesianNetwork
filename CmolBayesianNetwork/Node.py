@@ -1,5 +1,5 @@
 class Node():
-    def __init__(self, name, parents = None, next = None) -> None:
+    def __init__(self, name, parents = None, next = None):
         self.name = name
         self.probs = {}
         self.parents = parents or []
