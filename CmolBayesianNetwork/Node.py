@@ -15,8 +15,7 @@ class Node():
         self.probs.update(dic)
         
     def checkCompletion(self):
-        if len(self.parents) == 0:
-            return self.probs.get(self.name)
-        else:
-            return len(self.probs)>=2**len(self.parents)
+        return len(self.probs)>=2**len(self.parents) if self.parents else self.probs.get(self.name)
 
+    def getProbs(self, value):
+        return self.probs.get(value)
